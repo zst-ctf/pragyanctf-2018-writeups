@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Challenges : Pragyan CTF - Pragyan CTF</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mellivora.css" rel="stylesheet"><script type="text/javascript">
+        var global_dict = {};
+        global_dict["user_id"] = "205"
+    </script>
+</head>
+
+<body>
+<div class="page">
+    <nav class="header" id="header">
+        <div id="header-inner">
+            <div id="header-logo">
+                <a href="https://ctf.pragyan.org/">
+                    <h3 id="site-logo-text">Pragyan CTF</h3>
+                    <div id="site-logo">
+                        
+		<!--	<object data="/img/prgy_logo.png" type="image"></object> -->
+                   <img style="height:35px;" src="/img/prgy_logo.png"/>
+			 </div>
+                </a>
+            </div>
+            <div id="header-menu">
+                <ul class="nav nav-pills pull-right" id="menu-main">
+                            <li><a href="https://ctf.pragyan.org/home">Home</a></li>
+                            <li><a href="https://ctf.pragyan.org/challenges">Challenges</a></li>
+                            <li><a href="https://ctf.pragyan.org/hints">Hints</a></li>
+                            <li><a href="https://ctf.pragyan.org/scores">Scores</a></li>
+                            <li><a href="https://ctf.pragyan.org/profile">Profile</a></li>
+                            
+            <li>
+                <a href="https://ctf.pragyan.org/content?show=readme">Readme</a>
+            </li>
+            
+                            <li>
+    <form action="/actions/logout" method="post">
+        <input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" />
+        <button type="submit" id="logout-button">Log out</button>
+    </form>
+    </li>
+                            
+                </ul>
+            </div>
+        </div>
+    </nav><!-- navbar -->
+
+    <div class="container" id="body-container">
+
+        <div id="content-container">
+        <div id="categories-menu">
+<ul id="categories-menu"><li ><a href="https://ctf.pragyan.org/challenges?category=binary">binary</a></li><li  class="active"><a href="https://ctf.pragyan.org/challenges?category=crypto">crypto</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=forensics">forensics</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=reverse">reverse</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=stego">stego</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=web">web</a></li></ul>
+</div><div id="challenges-container" class="panel-group">
+    <div class="panel panel-success challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=3">Xmen OR the avengers</a> (100pts) <span class="glyphicon glyphicon-ok"></span><img src="/img/award_star_bronze_3.png" class="has-tooltip" data-toggle="tooltip" data-placement="right" title="Third to solve this challenge!" alt="Third to solve this challenge!" /></h4></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                the legion of doom is expecting an impending attack from a group of superheroes. they are not sure if it is the Xmen OR the avengers. they have received some information from a spy, a zip file containing the following files:<br />
+<br />
+info_crypt.txt<br />
+info_clear.txt<br />
+superheroes_group_info_crypt.txt<br />
+<br />
+help the legion of doom in decrypting the last file so they can prepare themselves and prevent their impending doom.
+            </div> <!-- / challenge-description --><div class="alert alert-warning"><strong>Hint!</strong> Note: The key for the second decryption is the MD5 hash of the first resulting file.</div><div class="challenge-files">
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="0.27 KB" href="download?file_key=e71221fa88ca26dd2f12fab77677fcfd8f8744918ec680d99c79c765892bf33e&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">info_clear.txt</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">c73195fa59733272f59e95740d4df17c</pre></span>
+            </span>
+            </div>
+        <p>
+        
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="0.27 KB" href="download?file_key=1d883b4bc072b41539b249b7b048f060472d9fd59c96b9d73e2e90e72874ea99&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">info_crypt.txt</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">97f0d4e339f9b84ca932893056a63b0d</pre></span>
+            </span>
+            </div>
+        <p>
+        
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="0.06 KB" href="download?file_key=d0ddc6d6180bff202feceb88c5f6f35bae8b257aab74960898bb010a774f615b&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">superheroes_group_info_crypt.txt</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">de1e4fdd41fb6e6e6c83e09865217446</pre></span>
+            </span>
+            </div>
+        <p>
+        </p></div> <!-- / challenge-files -->
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container -->
+    <div class="panel panel-default challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=5">Improper encryption</a> (100pts)</h4> <span class="glyphicon glyphicon-time"></span> <span data-countdown="1520232385">
+    1 day, 16 hours remaining
+    </span></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                Two brothers, Shivam and Mit were fighting for the only computer they had in their house. Watching this their father got angry and locked the computer with a strong password of length 28 which consists of alphabets. To unite them he gave them a puzzle to solve.<br />
+<br />
+He used two random strings and added the half-half of password in each string at some random position. He wanted to apply one-time-pad on both strings . So he used a smaller key 'k' of length 14(contains only english alphabets), and used some pseudo random generator, to get a longer key(K) of suitable size. Then he XOR each string with the generated key(K),and get encrypted message M1, and M2. He gave Shivam M1 and Mit M2 and asked them to find the password.<br />
+Also, to help them he also generated a string of suitable size by repeating k several times and then applied one time pad on it by larger key(K) to get M3.<br />
+<br />
+Shivam and Mit come to you with M1, M2, and M3. Help them find the password.<br />
+<br />
+M1=2d142303073d05392c3d3e273c2a1a211f082b280d2d0e332025380301352a122a151c3a342e362d2723171904011c0c0c292b3d0122063e2e1e2a08102a2d3d0b2e102123141c280f0c373d2b380d3d0301301f2d281935233239330f3a102b123b0d2a<br />
+M2=29190f1b18390707093a290b2d0b113f37332533333a0c3d1a29160a2f100a1d0034323b1b2e1225252500182531391d13260c21211019242d0a0a123b362d232d3a3a0a083c0e363c183a032b332d252c5637252d047b522a1e462a2a2909081705033d<br />
+M3=15350a23053f04272a2f12113a2137202a3022081616090c32162b0b32333413161725072508391f3c36192e1e1e37030b361a2a26163337130628020b34352d1a2e143d3f0a1b1d13012a19223c2b1f0c172b3406033808061d1a2306133011080e1839<br />
+<br />
+First 14 letter of password is: sAldnJfpUGlciN<br />
+
+            </div> <!-- / challenge-description -->
+                <div class="challenge-submit">
+                    <form method="post" class="form-flag" action="actions/challenges">
+                        <textarea name="flag" id="flag-input-5" type="text" class="flag-input form-control" placeholder="Please enter flag for challenge: Improper encryption"></textarea>
+                        <input type="hidden" name="challenge" value="5" />
+                        <input type="hidden" name="action" value="submit_flag" /><input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" /><button id="flag-submit-5" class="btn btn-sm btn-primary flag-submit-button" type="submit" data-countdown="1520040721" data-countdown-done="Submit flag">Submit flag</button><div class="challenge-submit-metadata"><p></p><p></p></div></form>
+                </div>
+                
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container -->
+    <div class="panel panel-default challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=2">Quite an EC task</a> (200pts)</h4> <span class="glyphicon glyphicon-time"></span> <span data-countdown="1520228532">
+    1 day, 15 hours remaining
+    </span></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                M = 93556643250795678718734474880013829509320385402690660619699653921022012489089<br />
+A = 66001598144012865876674115570268990806314506711104521036747533612798434904785<br />
+B = ?<br />
+<br />
+P = (56027910981442853390816693056740903416379421186644480759538594137486160388926, 65533262933617146434438829354623658858649726233622196512439589744498050226926)<br />
+<br />
+Q = (61124499720410964164289905006830679547191538609778446060514645905829507254103, 2595146854028317060979753545310334521407008629091560515441729386088057610440)<br />
+<br />
+n = ?<br />
+n &lt; 400000000000000000000000000000<br />
+<br />
+Find n. n is the flag.<br />
+<br />
+Note: The flag is not in the usual format.
+            </div> <!-- / challenge-description -->
+                <div class="challenge-submit">
+                    <form method="post" class="form-flag" action="actions/challenges">
+                        <textarea name="flag" id="flag-input-2" type="text" class="flag-input form-control" placeholder="Please enter flag for challenge: Quite an EC task"></textarea>
+                        <input type="hidden" name="challenge" value="2" />
+                        <input type="hidden" name="action" value="submit_flag" /><input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" /><button id="flag-submit-2" class="btn btn-sm btn-primary flag-submit-button" type="submit" data-countdown="0" data-countdown-done="Submit flag">Submit flag</button><div class="challenge-submit-metadata"><p></p><p></p></div></form>
+                </div>
+                
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container -->
+    <div class="panel panel-default challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=13">Rivest, Shamir and Aldeman’s quest</a> (200pts)</h4> <span class="glyphicon glyphicon-time"></span> <span data-countdown="1520148600">
+    17 hours, 30 minutes remaining
+    </span></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                Rivest comes up with an encryption, and Shamir creates a service for decrypting any cipher text encrypted using Rivests’s encryption. Aldeman is asked to decrypt a specific ciphertext, but he is not able to do so directly through Shamir’s service. Help him out.<br />
+<br />
+The service is running at 128.199.224.175:34000<br />
+<br />
+The encrypted text is :-<br />
+a0b75ef5dfd9ab0de9aa8c36a9c5aa28a924128a62826740ac3986efac69e2b85fc0df803e80da04c5f803726689e5f3134178de3cb203f6aebca22b376f7205d93a7224aca82cbbdc382200a1749fee095dfebe2aaabf99b622e4343bf5423cf6527433e26273e67d576157bf65a9258f613be9ad88d7b50350a89e676ae462<br />
+<br />
+Parameters :-<br />
+<br />
+N : 00:b9:61:cd:4d:b6:cc:a2:c5:ec:44:d1:e6:69:e5:<br />
+2b:85:05:74:a5:57:5c:09:3a:a7:40:d2:23:a7:b4:<br />
+2a:48:ed:3d:47:8a:c3:e9:10:c7:93:d2:9f:da:13:<br />
+f2:3c:ec:d0:0b:d0:ac:bd:cd:b7:0a:b1:f6:d5:e9:<br />
+82:1b:85:15:3f:39:81:f2:07:cf:5f:a2:0f:cd:f5:<br />
+e4:e4:32:b1:d3:fb:b3:b0:12:d7:d2:70:40:0d:5c:<br />
+67:c9:9a:ba:eb:2f:f3:c0:8e:5b:29:c8:07:b1:24:<br />
+3a:29:73:87:ff:06:44:3c:09:77:db:f2:f2:84:a9:<br />
+48:d4:5c:16:96:eb:a4:59:bf<br />
+<br />
+e : 65537<br />
+
+            </div> <!-- / challenge-description -->
+                <div class="challenge-submit">
+                    <form method="post" class="form-flag" action="actions/challenges">
+                        <textarea name="flag" id="flag-input-13" type="text" class="flag-input form-control" placeholder="Please enter flag for challenge: Rivest, Shamir and Aldeman’s quest"></textarea>
+                        <input type="hidden" name="challenge" value="13" />
+                        <input type="hidden" name="action" value="submit_flag" /><input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" /><button id="flag-submit-13" class="btn btn-sm btn-primary flag-submit-button" type="submit" data-countdown="0" data-countdown-done="Submit flag">Submit flag</button><div class="challenge-submit-metadata"><p></p><p></p></div></form>
+                </div>
+                
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container --></div> <!-- / challenges-container-->
+
+    </div> <!-- / content container -->
+
+</div> <!-- /container -->
+
+<div id="footer">
+
+<!--
+    <div class="fade">
+        <div id="footer-logo"/>
+            <object data="/img/mellivora.svg" type="image/svg+xml"></object>
+        </div>
+        <p>Powered by <a href="https://github.com/Nakiami/mellivora">Mellivora</a></p>
+    </div>
+-->
+
+</div>
+
+</div> <!-- /page -->
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/mellivora.js"></script>
+
+</body>
+</html>

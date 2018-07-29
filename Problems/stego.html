@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Challenges : Pragyan CTF - Pragyan CTF</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mellivora.css" rel="stylesheet"><script type="text/javascript">
+        var global_dict = {};
+        global_dict["user_id"] = "205"
+    </script>
+</head>
+
+<body>
+<div class="page">
+    <nav class="header" id="header">
+        <div id="header-inner">
+            <div id="header-logo">
+                <a href="https://ctf.pragyan.org/">
+                    <h3 id="site-logo-text">Pragyan CTF</h3>
+                    <div id="site-logo">
+                        
+		<!--	<object data="/img/prgy_logo.png" type="image"></object> -->
+                   <img style="height:35px;" src="/img/prgy_logo.png"/>
+			 </div>
+                </a>
+            </div>
+            <div id="header-menu">
+                <ul class="nav nav-pills pull-right" id="menu-main">
+                            <li><a href="https://ctf.pragyan.org/home">Home</a></li>
+                            <li><a href="https://ctf.pragyan.org/challenges">Challenges</a></li>
+                            <li><a href="https://ctf.pragyan.org/hints">Hints</a></li>
+                            <li><a href="https://ctf.pragyan.org/scores">Scores</a></li>
+                            <li><a href="https://ctf.pragyan.org/profile">Profile</a></li>
+                            
+            <li>
+                <a href="https://ctf.pragyan.org/content?show=readme">Readme</a>
+            </li>
+            
+                            <li>
+    <form action="/actions/logout" method="post">
+        <input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" />
+        <button type="submit" id="logout-button">Log out</button>
+    </form>
+    </li>
+                            
+                </ul>
+            </div>
+        </div>
+    </nav><!-- navbar -->
+
+    <div class="container" id="body-container">
+
+        <div id="content-container">
+        <div id="categories-menu">
+<ul id="categories-menu"><li ><a href="https://ctf.pragyan.org/challenges?category=binary">binary</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=crypto">crypto</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=forensics">forensics</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=reverse">reverse</a></li><li  class="active"><a href="https://ctf.pragyan.org/challenges?category=stego">stego</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=web">web</a></li></ul>
+</div><div id="challenges-container" class="panel-group">
+    <div class="panel panel-success challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=16">Scientist’s research</a> (150pts) <span class="glyphicon glyphicon-ok"></span></h4></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                Mary, a data scientist, specializing in CNN, has been working on a problem, she has recorded her observations in a table. Have a look at the data and deduce the flag.
+            </div> <!-- / challenge-description --><div class="challenge-files">
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="1.81 MB" href="download?file_key=9637022690f250ca7864886e5fc460ef769257523e4423e158ad840cfb939e9e&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">observations.xlsx</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">b576bc501ff53f2b4c10b9f9b213d436</pre></span>
+            </span>
+            </div>
+        <p>
+        </p></div> <!-- / challenge-files -->
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container -->
+    <div class="panel panel-default challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=7">Pictorial mess</a> (300pts)</h4> <span class="glyphicon glyphicon-time"></span> <span data-countdown="1520232625">
+    1 day, 16 hours remaining
+    </span></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                Johnny had an image that he was going to use for a very important purpose. Someone had hacked into his system and tampered with the image. Help him recover it.
+            </div> <!-- / challenge-description --><div class="challenge-files">
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="27.44 KB" href="download?file_key=c9e5b4b90267125226e150e8951bccc822cb4879f85356de5fcdfd749799e15f&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">files.zip</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">7b9178aa713d584c7811725a1289dda9</pre></span>
+            </span>
+            </div>
+        <p>
+        </p></div> <!-- / challenge-files -->
+                <div class="challenge-submit">
+                    <form method="post" class="form-flag" action="actions/challenges">
+                        <textarea name="flag" id="flag-input-7" type="text" class="flag-input form-control" placeholder="Please enter flag for challenge: Pictorial mess"></textarea>
+                        <input type="hidden" name="challenge" value="7" />
+                        <input type="hidden" name="action" value="submit_flag" /><input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" /><button id="flag-submit-7" class="btn btn-sm btn-primary flag-submit-button" type="submit" data-countdown="0" data-countdown-done="Submit flag">Submit flag</button><div class="challenge-submit-metadata"><p></p><p></p></div></form>
+                </div>
+                
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container --></div> <!-- / challenges-container-->
+
+    </div> <!-- / content container -->
+
+</div> <!-- /container -->
+
+<div id="footer">
+
+<!--
+    <div class="fade">
+        <div id="footer-logo"/>
+            <object data="/img/mellivora.svg" type="image/svg+xml"></object>
+        </div>
+        <p>Powered by <a href="https://github.com/Nakiami/mellivora">Mellivora</a></p>
+    </div>
+-->
+
+</div>
+
+</div> <!-- /page -->
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/mellivora.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+#!/usr/bin/env sage
+import sys
+from sage.rings.finite_rings.finite_field_constructor import is_PrimeFiniteField
+
+# From challenge
+M = 93556643250795678718734474880013829509320385402690660619699653921022012489089
+A = 66001598144012865876674115570268990806314506711104521036747533612798434904785
+
+Px = 56027910981442853390816693056740903416379421186644480759538594137486160388926
+Py = 65533262933617146434438829354623658858649726233622196512439589744498050226926
+P = (Px, Py)
+
+Qx = 61124499720410964164289905006830679547191538609778446060514645905829507254103
+Qy = 2595146854028317060979753545310334521407008629091560515441729386088057610440
+Q = (Qx, Qy)
+
+def find_b():
+	n_start = 400000000000000000000000000000-1
+	n_start = 399999999999999999999090688775
+	n = n_start
+	try:
+		print('START')
+		while n > 0:
+			n -= 2
+			if not is_PrimeFiniteField(n):
+				continue
+		
+			F = FiniteField(n)
+			b1 = F(Py)^2 - F(Px)^3
+			b2 = F(Qy)^2 - F(Qx)^3
+
+			#sys.stdout.write('\r' + str(n))
+			if (b1 == b2):
+				print('SUCCESS')
+				print('n:', n)
+				print('b:', b1)
+	except KeyboardInterrupt:
+		print('STOPPED')
+		print('n:', n)
+
+find_b();
+
+'''
+C = EllipticCurve(F, [ 0, 268892790095131465246420 ]) # Define our elliptic curve with a=0 and b=268892790095131465246420
+print(C)
+
+# ECC solver
+F = FiniteField(928669833265826932708591)
+E = EllipticCurve(F,[0,268892790095131465246420])
+G = E.point(P)
+d = 87441340171043308346177
+G*d
+'''

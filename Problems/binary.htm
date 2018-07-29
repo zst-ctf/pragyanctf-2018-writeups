@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Challenges : Pragyan CTF - Pragyan CTF</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mellivora.css" rel="stylesheet"><script type="text/javascript">
+        var global_dict = {};
+        global_dict["user_id"] = "205"
+    </script>
+</head>
+
+<body>
+<div class="page">
+    <nav class="header" id="header">
+        <div id="header-inner">
+            <div id="header-logo">
+                <a href="https://ctf.pragyan.org/">
+                    <h3 id="site-logo-text">Pragyan CTF</h3>
+                    <div id="site-logo">
+                        
+		<!--	<object data="/img/prgy_logo.png" type="image"></object> -->
+                   <img style="height:35px;" src="/img/prgy_logo.png"/>
+			 </div>
+                </a>
+            </div>
+            <div id="header-menu">
+                <ul class="nav nav-pills pull-right" id="menu-main">
+                            <li><a href="https://ctf.pragyan.org/home">Home</a></li>
+                            <li><a href="https://ctf.pragyan.org/challenges">Challenges</a></li>
+                            <li><a href="https://ctf.pragyan.org/hints">Hints</a></li>
+                            <li><a href="https://ctf.pragyan.org/scores">Scores</a></li>
+                            <li><a href="https://ctf.pragyan.org/profile">Profile</a></li>
+                            
+            <li>
+                <a href="https://ctf.pragyan.org/content?show=readme">Readme</a>
+            </li>
+            
+                            <li>
+    <form action="/actions/logout" method="post">
+        <input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" />
+        <button type="submit" id="logout-button">Log out</button>
+    </form>
+    </li>
+                            
+                </ul>
+            </div>
+        </div>
+    </nav><!-- navbar -->
+
+    <div class="container" id="body-container">
+
+        <div id="content-container">
+        <div id="categories-menu">
+<ul id="categories-menu"><li  class="active"><a href="https://ctf.pragyan.org/challenges?category=binary">binary</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=crypto">crypto</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=forensics">forensics</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=reverse">reverse</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=stego">stego</a></li><li ><a href="https://ctf.pragyan.org/challenges?category=web">web</a></li></ul>
+</div><div id="challenges-container" class="panel-group">
+    <div class="panel panel-success challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=14">Old school hack</a> (200pts) <span class="glyphicon glyphicon-ok"></span></h4></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                Chris is trying out to be a police officer and the applications have just been sent into the police academy. He is really eager to find out about his competition. Help it him back the system and view the other applicant’s applications.<br />
+<br />
+The service is running at 128.199.224.175:13000
+            </div> <!-- / challenge-description --><div class="challenge-files">
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="13.00 KB" href="download?file_key=a2b563db3189be871e766812c10b3907bc42ab40a6fe49eb194278b357aee3ac&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">police_academy</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">b2ccb10e093cc003d5227d9c5e57c009</pre></span>
+            </span>
+            </div>
+        <p>
+        </p></div> <!-- / challenge-files -->
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container -->
+    <div class="panel panel-default challenge-container">
+        <div class="panel-heading">
+            <h4 class="challenge-head">
+            <a href="challenge?id=19">Unbreakable encryption</a> (350pts)</h4> <span class="glyphicon glyphicon-time"></span> <span data-countdown="1520148600">
+    17 hours, 30 minutes remaining
+    </span></div>
+
+    <div class="panel-body">
+            <div class="challenge-description">
+                Your friend, Liara, has encrypted all her life secrets, using the one of the best encryptions available in the world, the AES. She has challenged you that no matter what, you can never read her life secrets.<br />
+<br />
+The encryption service is running at :-  <b>128.199.224.175:33000</b><br />
+The binary file is named <b>aes_enc</b>.<br />
+<br />
+Her encrypted life secrets are as follows :-<br />
+<br />
+0000 -  <b>40 87 68 1a b0 23 73 c4 61 44 b4 c0 21 f1 63 0b</b>        @.h..#s.aD..!.c.<br />
+0010 - <b>73 e9 0d 38 e4 bd d8 33 41 64 2c 43 85 d4 54 0e</b>        s..8...3Ad,C..T.<br />
+0020 -  <b>f5 bc 8c 02 db ee 0d e8 d6 29 81 3a 5f cb 63 bd</b>          .........).:_.c.<br />
+<br />
+<br />
+Note: Since some teams were having issues with the buffering of the I/O streams when executing the binary remotely, we have updated the binary file, to flush the output streams properly. The modified binary is named <b>aes_enc_unbf</b>, and will be running on <b>128.199.224.175:33100</b><br />
+<br />
+<br />
+<br />
+<br />
+
+            </div> <!-- / challenge-description --><div class="challenge-files">
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="2.12 MB" href="download?file_key=98af12cdb5fbb7c015b900f9d631cdcbbc931cd11d17b1ff3584aa0ad1cc8869&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">aes_enc</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">8c7abd94d06bb416b5ad807e1609ab99</pre></span>
+            </span>
+            </div>
+        <p>
+        
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="0.03 KB" href="download?file_key=542b47ec609ecc5867b6cb99dba1bcef6ac71767212048f391a971170a2309bc&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">key.aes</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">05bef2d3b8cf320bccd862f248a29b12</pre></span>
+            </span>
+            </div>
+        <p>
+        
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="0.02 KB" href="download?file_key=52466321ae354754249fc6f8f275a525176dc7911a59f1870a697b36fc89d291&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">iv.aes</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">876d08404919ee5bd4e57bf726f41bb4</pre></span>
+            </span>
+            </div>
+        <p>
+        
+        <p>
+            <div>
+            <span class="glyphicon glyphicon-floppy-save"></span>
+            <span class="challenge-attachment">
+            <a class="has-tooltip" data-toggle="tooltip" data-placement="right" title="2.12 MB" href="download?file_key=43f9c854654a99a8d2cc8a18655105faad39cb1cbd353de19c50c080fdc50302&amp;team_key=2150cf438496d18cabf096b8e5bb878cc6914ee39f1b4f0879ae2eff59cc54ae">aes_enc_unbf</a>
+            <span class="has-tooltip" data-toggle="tooltip" data-placement="right" title="MD5 file hash"><pre class="inline-pre">20a2f46b813f3a8bd561999280991425</pre></span>
+            </span>
+            </div>
+        <p>
+        </p></div> <!-- / challenge-files -->
+                <div class="challenge-submit">
+                    <form method="post" class="form-flag" action="actions/challenges">
+                        <textarea name="flag" id="flag-input-19" type="text" class="flag-input form-control" placeholder="Please enter flag for challenge: Unbreakable encryption"></textarea>
+                        <input type="hidden" name="challenge" value="19" />
+                        <input type="hidden" name="action" value="submit_flag" /><input type="hidden" name="xsrf_token" value="T9DPPjyykzx/ZD+awUyRpwWC/G1jGRL6+EhZ+0H1YLrxuh6I6Yovaef2u5SnAyB8" /><button id="flag-submit-19" class="btn btn-sm btn-primary flag-submit-button" type="submit" data-countdown="0" data-countdown-done="Submit flag">Submit flag</button><div class="challenge-submit-metadata"><p></p><p></p></div></form>
+                </div>
+                
+    </div> <!-- / panel-body -->
+    </div> <!-- / challenge-container --></div> <!-- / challenges-container-->
+
+    </div> <!-- / content container -->
+
+</div> <!-- /container -->
+
+<div id="footer">
+
+<!--
+    <div class="fade">
+        <div id="footer-logo"/>
+            <object data="/img/mellivora.svg" type="image/svg+xml"></object>
+        </div>
+        <p>Powered by <a href="https://github.com/Nakiami/mellivora">Mellivora</a></p>
+    </div>
+-->
+
+</div>
+
+</div> <!-- /page -->
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/mellivora.js"></script>
+
+</body>
+</html>
